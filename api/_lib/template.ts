@@ -42,7 +42,7 @@ export function getHtml(parsedReq: ParsedRequest) {
     <body>
         <div>
             <div class="logo-wrapper">
-                ${emojify(emoji)}
+                ${emojify(emoji === "" ? "📭" : emoji)}
             </div>
         </div>
     </body>
